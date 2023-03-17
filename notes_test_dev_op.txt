@@ -1,0 +1,19 @@
+**Boas Praticas**
+
+1 - É uma boa pratica que o projeto esteja totalmente em inglês. Desde o nome das classes, atributos e metodos. Mas caso faça em português,
+é de boa pratica seguir o projeto todo em português.
+
+2 - É uma boa pratica separar as classes em pacotes, por exemplo, todas as entidades podem ser realocadas dentro de uma pacote chamado
+"Entities", as controllers dentro de um pacote chamada "Controllers" e assim por diante.
+
+3 - Nome da classe "Codigo" estava escrito com ascento, o que não é uma boa pratica.
+
+Obs: Os erros acima foram indentificados nas classes Cliente, Emprea, Produto, Venda, Usuario.
+
+**Código**
+
+Tive que fazer muitas alterações no código pois o mesmo apresentava uma légica incorreta, sem repetição (loop) caso o usuário queira deslogar e trocar de empresa para um cliente ou até mesmo entrar no admin.
+outros erros que tive que corrigir foi na duplicidade de alguns códigos e trechos desnecessários como por exemplo validações criadas que não serviam de nada.
+Tirei um grande bloco de código da main() que era responsável simular um funcionamento de banco de dados, levando esse bloco para uma função separada, caso queira fazer modifições e melhorias no futuro.
+Adicionei também a possibilidade do admin poder ver literalmente todos os dados de todas as classes, desde usuário até mesmo da empresa. Da forma que estava antes, o admin possuía uma função incoerente com a Classe.
+Alterei também o nome de todos os atributos das classes que estava em português para o inglês, alterando também seus contrutores e getters and setters.
